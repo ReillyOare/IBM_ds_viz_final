@@ -71,7 +71,7 @@ app.layout = dbc.Container([
             ),
         ]),
     ]),
-    html.Div(id='output-container', className='chart-grid', style={'flex'}),
+    html.Div(id='output-container', className='chart-grid', style={'display':'flex'}),
 ])
 
 
