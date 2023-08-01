@@ -199,7 +199,7 @@ def update_output_container(input_year, selected_statistics):
         )
            
 # Plot 2 Total Monthly Automobile sales using line chart.
-        mas = data.groupby('Month')['Automobile_Sales'].sum().reset_index()
+        mas = yearly_data.groupby('Month')['Automobile_Sales'].sum().reset_index()
         Y_chart2 = dcc.Graph(figure=px.line(mas,
         x='Month',
         y='Automobile_Sales',
